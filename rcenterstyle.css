@@ -1,6 +1,7 @@
 body{
     font-family: 'Poppins';
 }
+
 .container {
     display: flex;
 }
@@ -13,12 +14,13 @@ body{
     width:100%;
     
 }
+
 .main{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
+
 .card {
     color: black;
     padding: 1rem;
@@ -34,7 +36,14 @@ body{
 }
 
 .card img{
-    width: 60%;
+    width: 50%;
+}
+
+.card2 img{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    width: 30%;
 }
 
 .name{
@@ -51,6 +60,17 @@ body{
     padding-left: 5%;
 }
 
+.container2 {
+    display: flex;
+    width: 50%
+}
+
+.title2 {
+    display: flex;
+    font-size: 4rem;
+    padding-left: 10%;
+    padding-top: 5%;
+}
 
 .address{
     font-size: 1.5rem;
@@ -62,6 +82,7 @@ body{
     display: grid;
     gap: 1rem;   
 }
+
 .container button{
     background-image: linear-gradient(to right, #07A081 , rgb(255, 255, 255));
     border: none;
