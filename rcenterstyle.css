@@ -1,0 +1,85 @@
+body{
+    font-family: 'Poppins';
+}
+.container {
+    display: flex;
+}
+  
+.side {
+    flex: 70%;
+}
+
+#map{
+    width:100%;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.card {
+    color: black;
+    padding: 1rem;
+    min-height: 2rem;
+    width: auto;
+    font-family: 'Poppins';
+    
+    box-shadow: 0px 10px 20px -20px #000000 ;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    
+}
+
+.card img{
+    width: 60%;
+}
+
+.name{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 10%;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.title {
+    font-size: 4rem;
+    padding-left: 5%;
+}
+
+
+.address{
+    font-size: 1.5rem;
+}
+
+.cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;   
+}
+.container button{
+    background-image: linear-gradient(to right, #07A081 , rgb(255, 255, 255));
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .side {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
